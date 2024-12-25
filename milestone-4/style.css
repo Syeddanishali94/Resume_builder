@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #27ae60;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+fieldset {
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 12px;
+    color: #27ae60;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+button.removeEducation,
+button.removeExperience {
+    background-color: #e74c3c;
+    margin-top: 12px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    width: auto;
+}
+
+button.removeEducation:hover,
+button.removeExperience:hover {
+    background-color: #c0392b;
+}
+
+#addEducation,
+#addExperience,
+#addSkill {
+    width: auto;
+    font-size: 1rem;
+}
+
+/* Skills Section */
+#skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#skillsList div {
+    background-color: #27ae60;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Resume Output */
+#resumeOutput {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f9fafc;
+    border-radius: 10px;
+    border: 1px solid #e1e4e8;
+    display: block; /* Ensure visibility of generated output */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resumeOutput .section {
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+#resumeOutput .section:last-child {
+    border-bottom: none;
+}
+
+#resumeOutput h3 {
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+#resumeOutput p {
+    font-size: 1rem;
+    color: #34495e;
+    margin: 8px 0;
+}
+
+#resumeOutput img {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Generated List Items */
+#resumeOutput ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#resumeOutput ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+/* Formatting Buttons */
+#formattingButtons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#editMessage {
+    color: #27ae60;
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
+.edit-mode {
+    background-color: #2980b9;
+}
+
+.edit-mode:hover {
+    background-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    #skillsList div {
+        font-size: 0.9rem;
+        padding: 4px 10px;
+    }
+
+    #resumeOutput {
+        padding: 20px;
+    }
+
+    #resumeOutput h3 {
+        font-size: 1.1rem;
+    }
+
+    #resumeOutput p {
+        font-size: 0.9rem;
+    }
+}
